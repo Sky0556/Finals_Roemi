@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - IEZ Kape</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://i.pinimg.com/1200x/c2/fb/29/c2fb29bc4516c0ed4141f7aec7d2d8fb.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #3e2f1c;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .navbar {
+      background-color: #6f4e37;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+
+    .content {
+      width: 1000px;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px 30px;
+      margin-bottom: 60px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .content h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #c3a384;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 1.3rem;
+      line-height: 1.7;
+      margin: 20px 0;
+      color: #4b3b29;
+    }
+
+    .footer {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      width: 100%;
+      margin-top: auto;
+      font-size: 1rem;
+    }
+
+    .footer .contact-info {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 1100px) {
+      .content {
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .content h2 {
+        font-size: 2rem;
+      }
+
+      .content p {
+        font-size: 1.1rem;
+      }
+
+      .footer {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">IEZ Kape</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Content -->
+  <div class="content">
+    <h2>About Us</h2>
+    <p>
+      Welcome to IEZ Kape, where every cup whispers comfort and every corner invites you to stay. Tucked away in the heart of Bulacan, our café began with a simple love for coffee — and a dream to build a space that feels like coming home.
+    </p>
+    <p>
+      Here, the aroma of fresh brews blends with quiet laughter, unspoken thoughts, and peaceful moments. Whether you're chasing deadlines, sharing stories, or finding stillness in solitude, IEZ Kape is your warm little haven.
+    </p>
+    <p>
+      Our mission is more than just serving coffee — it’s to serve warmth, belonging, and the familiar taste of home in every sip. Because here at IEZ Kape, "Where Every Cup Feels Like Home" is more than a promise — it’s the heart of everything we do.
+    </p>
+  </div>
+
+  <!-- Footer with Switched Order -->
+  <div class="footer">
+    <div class="contact-info">
+      📍 123 Brew Street, Coffee Town, PH | 📞 0912 345 6789 | ✉️ contact@iezkape.com
+    </div>
+    <p>&copy; 2025 IEZ Kape. All rights reserved.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

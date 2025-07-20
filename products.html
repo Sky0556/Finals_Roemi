@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products - IEZ Kape</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e8d3b9;
+      color: #3e2f1c;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      background-color: #6f4e37;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+
+    .products-section {
+      flex-grow: 1;
+      padding: 60px 40px;
+      max-width: 1400px;
+      margin: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .products-section h2 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      text-decoration: underline;
+      text-decoration-color: #6f4e37;
+      margin-bottom: 50px;
+    }
+
+    .menu-items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      width: 100%;
+    }
+
+    .menu-item {
+      background-color: #fff3e6;
+      border: 1px solid #d1bfa7;
+      border-radius: 12px;
+      padding: 40px 30px;
+      flex: 1 1 45%;
+      min-width: 400px;
+      box-shadow: 3px 3px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .menu-item h4 {
+      margin-bottom: 15px;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    .menu-item p {
+      font-style: italic;
+      color: #6f4e37;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .footer {
+      background-color: #6f4e37;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    @media (max-width: 1024px) {
+      .menu-item {
+        min-width: 350px;
+        padding: 35px 25px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .products-section {
+        padding: 40px 20px;
+      }
+
+      .menu-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .menu-item {
+        flex: 1 1 100%;
+        min-width: 90%;
+        max-width: 500px;
+        padding: 35px 25px;
+        font-size: 1.1rem;
+      }
+
+      .menu-item h4 {
+        font-size: 1.8rem;
+      }
+
+      .menu-item img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">IEZ Kape</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Products Section -->
+  <div class="products-section">
+    <h2 class="text-center">Our Coffee Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://i.pinimg.com/736x/c7/ea/a8/c7eaa8742575a15ab7246e468f47ac9f.jpg" alt="Americano">
+        <h4>Americano</h4>
+        <p>A warm hug in a cup, perfect for cozy mornings at home.</p>
+        <strong>₱100</strong>
+      </div>
+      <div class="menu-item">
+        <img src="https://sdmntpreastus.oaiusercontent.com/files/00000000-cbc0-61f9-99bb-fb4b8f280586/raw?se=2025-07-20T04%3A51%3A23Z&sp=r&sv=2024-08-04&sr=b&scid=062d49dd-45aa-5bbd-94c8-e2a9847ac04d&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-20T02%3A31%3A17Z&ske=2025-07-21T02%3A31%3A17Z&sks=b&skv=2024-08-04&sig=fjKye2ohsFtAXjtlwlnt5BPrtXvTHZSjG4ui6kR7zTs%3D" alt="Brown Sugar Espresso">
+        <h4>Brown Sugar Espresso</h4>
+        <p>Sweet and bold — like comforting moments shared with loved ones.</p>
+        <strong>₱100</strong>
+      </div>
+      <div class="menu-item">
+        <img src="https://i.pinimg.com/1200x/3e/27/d1/3e27d1873811b7903b2fbe5e3ae8299c.jpg" alt="Caramel Macchiato">
+        <h4>Caramel Macchiato</h4>
+        <p>Velvety sweetness that makes every sip feel like a gentle embrace.</p>
+        <strong>₱150</strong>
+      </div>
+      <div class="menu-item">
+        <img src="https://i.pinimg.com/1200x/17/4a/4a/174a4aee10877e3122f00274d78dc439.jpg" alt="Vietnamese Latte">
+        <h4>Vietnamese Latte</h4>
+        <p>Rich, smooth, and inviting — just like your favorite corner at home.</p>
+        <strong>₱150</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 IEZ Kape. All rights reserved.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
